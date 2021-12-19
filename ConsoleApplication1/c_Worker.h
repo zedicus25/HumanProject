@@ -13,5 +13,14 @@ public:
 
 	friend std::ostream& operator << (std::ostream& out, const c_Worker& wor);
 	friend std::istream& operator >> (std::istream& in, c_Worker& wor);
+
+	~c_Worker()
+	{
+		this->firts_name = nullptr;
+		this->last_name = nullptr;
+		this->pasportID = nullptr;
+		this->place_of_work = nullptr;
+		this->position = nullptr;
+	}
 };
 

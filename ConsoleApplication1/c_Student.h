@@ -12,5 +12,14 @@ public:
 
 	friend std::ostream& operator << (std::ostream& out, const c_Student& st);
 	friend std::istream& operator >> (std::istream& in,  c_Student& st);
+
+	~c_Student()
+	{
+		this->firts_name = nullptr;
+		this->last_name = nullptr;
+		this->pasportID = nullptr;
+		this->group = nullptr;
+		this->university = nullptr;
+	}
 };
 
