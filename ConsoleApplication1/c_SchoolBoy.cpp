@@ -17,6 +17,7 @@ c_SchoolBoy::c_SchoolBoy(const char* first_name, const char* last_name, const ch
 
 std::ostream& operator<<(std::ostream& out, const c_SchoolBoy& sch)
 {
+	out << "Schoolboy: ";
 	out << sch.firts_name << "\t" << sch.last_name << "\t" << sch.gender << "\t" << sch.height <<
 		"\t" << sch.weight << "\t" << sch.age << "\t" << sch.pasportID << "\n";
 	out << sch.school << "\t" << sch.clas << "\t" << sch.avarageScore << "\n";
