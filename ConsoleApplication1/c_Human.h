@@ -2,7 +2,7 @@
 #include <iostream>
 class c_Human
 {
-private:
+protected:
 	char* firts_name;
 	char* last_name;
 	char* pasportID;
